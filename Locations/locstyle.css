@@ -44,6 +44,11 @@ a:hover {
     color: white;
     font-size: 2.8em;
     margin: 0 10%;
+    transition: all .2s;
+}
+
+.navbarsocial a:hover {
+    color: black;
 }
 
 .container {
