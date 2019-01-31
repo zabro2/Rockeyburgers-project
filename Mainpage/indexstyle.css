@@ -1,6 +1,6 @@
 html, body {
     width: 100%;
-    height: 100%;
+    height: 120%;
     margin: 0;
     padding: 0;
     background-color: black;
@@ -11,6 +11,9 @@ nav {
     display: flex;
     background-color: #ac1a17;
     justify-content: space-around;
+    position: sticky;
+    z-index: 1;
+    top: 0;
 }
 
 .navbartop {
@@ -45,13 +48,19 @@ a:hover {
     color: white;
     font-size: 2.8em;
     margin: 0 10%;
+    transition: all .2s;
+}
+
+.navbarsocial a:hover {
+    color: black;
 }
 
 .container {
     padding: 0 10px 10px 10px;
     font-family: 'Open Sans', sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header {
@@ -60,11 +69,12 @@ a:hover {
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    top: -20px;
     background-color: #ffffff;
     border-width: 0 2px 2px 2px;
     border-radius: 0 0 10px 10px;
     font-family: 'Aleo', serif;
-
 }
 
 #logopic {
@@ -84,3 +94,83 @@ a:hover {
     font-weight: bold;
     margin: 20px;
 }
+
+.top {
+    width: 95%;
+    height: 50%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.top img {
+    margin: 0 40px;
+    border-radius: 10px;
+    height: 414.391px;
+    width: 602.766px;
+}
+
+.side {
+    color: white;
+    margin: 0 40px;
+    padding: 0;
+    width: 510px;
+    height: 360px;
+    font-size: 1.2em;
+}
+
+.firstp {
+    margin-top: 0;
+}
+
+.lastp {
+    margin-bottom: 0;
+}
+
+.article {
+    width: 95%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.quoteholder {
+    width: 570px;
+    height: 400px;
+    margin: 0 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.quote {
+    margin: 40px;
+    font-size: 1.8em;
+    text-align: center;
+    color: black;
+    font-family: 'Aleo', serif;
+    font-weight: bold;
+}
+
+.content {
+    width: 555px;
+    margin: 0 40px;
+    font-size: 1.2em;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
