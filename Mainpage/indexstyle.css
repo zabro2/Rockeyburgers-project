@@ -1,6 +1,6 @@
 html, body {
     width: 100%;
-    height: 100%;
+    height: 142%%;
     margin: 0;
     padding: 0;
     background-color: black;
@@ -56,7 +56,7 @@ a:hover {
 }
 
 .container {
-    padding: 0 10px 10px 10px;
+    padding: 0 10px;
     font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: column;
@@ -96,10 +96,61 @@ a:hover {
     text-align: center;
 }
 
+.discountholder {
+    margin: 20px 0 40px 0;
+    width: 55%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fda100;
+    border-radius: 10px;
+}
+
+.discount {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titles {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.disctitle {
+    font-family: 'Aleo', serif;
+    font-size: 2.3em;
+}
+
+.discsub {
+    font-size: 1.2em;
+}
+
+.discform {
+    font-size: 1.2em;
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.discform form input {
+    border-radius: 5px;
+    border: none;
+    height: 20px;
+}
+
+.formtxt {
+    margin-right: 40px;
+}
+
 .top {
     width: 95%;
     height: 50%;
-    margin-top: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -169,6 +220,7 @@ a:hover {
     color: white;
 }
 
+
 .faqholder {
     width: 95%;
     max-width: 1300px;
@@ -185,6 +237,7 @@ a:hover {
 }
 
 .faqsec {
+    width: 80%;
     margin: 40px 40px;
     display: flex;
     justify-content: space-between;
@@ -201,6 +254,7 @@ a:hover {
 }
 
 .faqtitle {
+    width: 100%;
     padding: 10px 5px;
     text-align: center;
     font-size: 1.2em;
@@ -215,32 +269,13 @@ a:hover {
 }
 
 .faqinfo {
-    visibility: hidden;
+    display: none;
 }
 
 .faqinfo:target {
-    visibility: visible;
+    display: block;
 }
 
-.discount {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.disctitle {
-    font-family: 'Aleo', serif;
-    font-size: 2em;
-}
-
-.discsub {
-    font-size: 1.2em;
-}
-
-.discform {
-    font-size: 1.2em;
-}
 
 
 
