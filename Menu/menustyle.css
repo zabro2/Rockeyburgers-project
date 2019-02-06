@@ -1,4 +1,4 @@
-html, body {
+html {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -6,11 +6,19 @@ html, body {
     background-color: black;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
 
 nav {
     display: flex;
     background-color: #ac1a17;
     justify-content: space-around;
+    position: sticky;
+    z-index: 1;
+    top: 0;
 }
 
 .navbartop {
@@ -55,4 +63,106 @@ a:hover {
 .container {
     padding: 10px;
     font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.topholder {
+    font-family: 'Aleo', serif;
+    font-size: 2.8em;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.title {
+    font-family: 'Aleo', serif;
+    font-size: 1.8em;
+    color: #fda100;
+    border-bottom: solid #ac1a17;
+}
+
+
+.secdesc {
+    font-size: 1.1em;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    margin: 20px 40px;
+}
+
+.header {
+    margin: 20px 0;
+}
+
+.toppingssec {
+    margin: 20px 0 0 0;
+    padding: 10px;
+    background-color: #fda100;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toppingsholder {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    color: black;
+}
+
+#toppings {
+    font-size: 1.2em;
+    color: black;
+    border: none;
+}
+
+.free, .extra {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.free ul, .extra ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.subtitle {
+    margin-bottom: 5px;
+    color: #ac1a17;
+    font-size: 1.2em;
+}
+
+.stock {
+    width: 425px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemname {
+    font-family: 'Aleo', serif;
+}
+
+.iteminfo {
+    font-size: .8em;
 }
