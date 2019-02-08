@@ -63,4 +63,67 @@ a:hover {
 .container {
     padding: 10px;
     font-family: 'Open Sans', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+}
+
+.top header {
+    font-size: 2.8em;
+    font-family: 'Aleo', serif;
+    margin-top: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+iframe {
+    width: 640px;
+    height: 480px;
+    border: none;
+    margin: 20px;
+}
+
+
+.tableholder {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.tabletop {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.tablebottom {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+table {
+    width: 225px;
+    margin: 20px;
+}
+
+.city {
+    color: #fda100;
+    border-bottom: solid #ac1a17 2px;
+    font-size: 1.6em;
+}
+
+td {
+    font-size: 1.2em;
 }
