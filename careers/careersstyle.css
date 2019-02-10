@@ -72,51 +72,199 @@ a:hover {
 .top {
     font-size: 2.8em;
     font-family: 'Aleo', serif;
-    margin-top: 20px;
+    margin: 20px 0 10px 0;
 }
 
 .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+input {
+    font-size: 0.8em;
+}
+
+.header {
+    width: 100%;
+    font-size: 1.8em;
+    margin: 10px 0 20px 0;
+    color: #fda100;
+    border-bottom: #ac1a17 solid 3px;
+    font-family: 'Aleo', serif;
+    text-align: center;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
 }
 
 .name input {
     border-radius: 5px;
     border: none;
-    height: 20px;
-    width: 200px;
+    height: 25px;
+    width: 46.5%;
+    margin: 10px 0;
+    padding: 2px 5px;
+
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+}
+
+.address {
+
 }
 
 .address input {
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    width: calc(100% - 10px);
+    margin: 10px 0;
+    padding: 2px 5px;
+}
+
+.citystate {
+    display: flex;
+    justify-content: space-between;
 
 }
 
 .citystate input {
-
-}
-
-.zipcode input {
-
-}
-
-.phone input {
-
-}
-
-.email input {
-
-}
-
-.workform input {
-
-}
-
-.available input {
-
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    width: 30%;
+    margin: 10px 0;
+    padding: 2px 5px;
 }
 
 select {
     border-radius: 5px;
     border: none;
-    height: 20px;
-    width: 202px;
+    height: 29px;
+    width: 30%;
+    font-size: 0.8em;
+    margin: 10px 0;
+    padding: 2px 5px;
+    align-self: center;
+}
+
+
+.zipcode {
+
+}
+
+.zipcode input {
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    width: 30%;
+    margin: 10px 0;
+    padding: 2px 5px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contact input {
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    width: 46.5%;
+    margin: 10px 0;
+    padding: 2px 5px;
+}
+
+.workhistory {
+    margin-top: 10px;
+}
+
+.worktitle {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fda100;
+    border-bottom: #ac1a17 solid 3px;
+    font-family: 'Aleo', serif;
+}
+
+.workdesc {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.workform {
+    display: flex;
+    flex-direction: column;
+}
+
+.workform textarea {
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0;
+    padding: 2px 5px;
+    font-size: 0.8em;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+.available {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 20px 0;
+}
+
+.availabletitle {
+    font-size: 1.8em;
+    margin: 10px 0 10px 0;
+    color: #fda100;
+    border-bottom: #ac1a17 solid 3px;
+    font-family: 'Aleo', serif;
+    text-align: center;
+}
+
+.available form {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+#btn {
+    align-self: center;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #fda100;
+    border: none;
+    font-size: 1.2em;
+    height: 70px;
+    transition: all .2s;
+}
+
+#btn:hover {
+    color: white;
 }

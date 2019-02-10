@@ -15,7 +15,7 @@
         <li><a href='../Mainpage/index.html'>Home</a></li>
         <li><a href='../Menu/menu.html'>Menu</a></li>
         <li><a href='../Locations/loc.html'>Locations</a></li>
-        <li><a href='../Careers/careers.html'>Careers</a></li>
+        <li><a href='../Careers/careers.html'>Jobs</a></li>
     </ul>
     <div class='navbarsocial'>
         <a href='http://www.twitter.com/keyburgers' target='_blank'><i class="fab fa-twitter-square"></i></a>
@@ -91,14 +91,12 @@
                     <option value="WI">Wisconsin</option>
                     <option value="WY">Wyoming</option>
                 </select>
+                <form class='zipcode'>
+                    <input id='zipcode' type='number' name='zipcode' placeholder='Zip code'>
+                </form>
             </form>
-            <form class='zipcode'>
-                <input id='zipcode' type='number' name='zipcode' placeholder='Zip code'>
-            </form>
-            <form class='phone'>
+            <form class='contact'>
                 <input id='number' type='number' name='phone' placeholder='Phone'>
-            </form>
-            <form class='email'>
                 <input id='email' type='email' name='email' placeholder='Email'>
             </form>
             <div class='workhistory'>
@@ -107,20 +105,22 @@
                     for? How long were you there?
                 </div>
                 <div class='workform'>
-                    <textarea id='job1' rows="4" cols="50"></textarea>
-                    <textarea id='job2' rows='4' cols='50'></textarea>
+                    <textarea id='job1' placeholder='Description' rows="8" cols="50"></textarea>
+                    <textarea id='job2' placeholder='Description' rows='8' cols='50'></textarea>
                 </div>
             </div>
-            <div class='available'>
-                <div class='availabletitle'>Availability</div>
-                <form>
-                    <input type="checkbox" name="daytime" value="Daytime">Daytime<br>
-                    <input type="checkbox" name="evenings" value="Evenings">Evenings<br>
-                    <input type="checkbox" name="anytime" value="Anytime">Anytime<br>
-                </form>
-            </div>
-            <div class='submit'>
-                <button id='btn' type='button'>Apply</button>
+            <div class='availabletitle'>Availability</div>
+            <div class='bottom'>
+                <div class='available'>
+                    <form>
+                        <div class='check'><input type="checkbox" name="daytime" value="Daytime"> Daytime<br></div>
+                        <div class='check'><input type="checkbox" name="evenings" value="Evenings"> Evenings<br></div>
+                        <div class='check'><input type="checkbox" name="anytime" value="Anytime"> Anytime<br></div>
+                    </form>
+                </div>
+                <div class='submit'>
+                    <button id='btn' type='button'>Apply</button>
+                </div>
             </div>
         </div>
     </div>
